@@ -9,12 +9,14 @@ plugins {
 
 repositories {
     mavenLocal()
+    mavenCentral()
     maven {
         url = 'http://repo.maven.apache.org/maven2'
     }
 }
 
 dependencies {
+	implementation 'io.github.woodser:monero-java-lite:0.2.0'
     implementation 'com.google.code.gson:gson:2.7'
     implementation 'org.apache.httpcomponents:httpclient:4.5.3'
     testImplementation 'junit:junit:4.12'
