@@ -1,0 +1,72 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>io.github.woodser</groupId>
+	<artifactId>gradle-sample-app</artifactId>
+	<version>0.0.1</version>
+	<name>Monero Sample App</name>
+	<description>Sample Java application which uses monero-java</description>
+	<url>https://github.com/woodser/gradle-sample-app</url>
+	<properties>
+		<java-version>1.8</java-version>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<apachelog-version>2.11.0</apachelog-version>
+		<jackson-version>[2.8.11.1,)</jackson-version>
+		<maven.test.skip>true</maven.test.skip>
+	</properties>
+
+	<dependencies>
+		<dependency>
+			<groupId>io.github.woodser</groupId>
+			<artifactId>monero-java-lite</artifactId>
+			<version>0.2.0</version>
+		</dependency>
+	</dependencies>
+
+	<scm>
+		<connection>scm:git:git://github.com/woodser/gradle-sample-app.git</connection>
+		<developerConnection>scm:git:ssh://github.com/woodser/gradle-sample-app.git</developerConnection>
+		<url>http://github.com/woodser/gradle-sample-app/tree/master</url>
+	</scm>
+
+	<licenses>
+		<license>
+			<name>MIT License</name>
+			<url>http://www.opensource.org/licenses/mit-license.php</url>
+		</license>
+		<license>
+			<name>The Apache License, Version 2.0</name>
+			<url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
+		</license>
+	</licenses>
+
+	<developers>
+		<developer>
+			<name>woodser</name>
+			<email>woodser@protonmail.com</email>
+		</developer>
+	</developers>
+
+	<profiles>
+		<profile>
+			<id>default</id>
+			<activation>
+				<activeByDefault>true</activeByDefault>
+			</activation>
+			<build>
+				<plugins>
+					<plugin>
+						<groupId>org.apache.maven.plugins</groupId>
+						<artifactId>maven-compiler-plugin</artifactId>
+						<version>3.8.0</version>
+						<configuration>
+							<source>${java-version}</source>
+							<target>${java-version}</target>
+						</configuration>
+					</plugin>
+				</plugins>
+			</build>
+		</profile>
+	</profiles>
+</project>
