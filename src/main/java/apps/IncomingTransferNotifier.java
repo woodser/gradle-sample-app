@@ -1,6 +1,5 @@
 package apps;
 
-import java.util.UUID;
 import java.util.concurrent.TimeUnit;
 
 import monero.daemon.MoneroDaemonRpc;
@@ -42,7 +41,6 @@ public class IncomingTransferNotifier {
     // create view-only wallet
     MoneroWalletJni wallet = MoneroWalletJni.createWallet(new MoneroWalletConfig()
             .setNetworkType(MoneroNetworkType.STAGENET)
-            .setPath("test_wallets/" + UUID.randomUUID().toString())
             .setPassword("supersecretpassword")
             .setPrimaryAddress(primaryAddress)
             .setPrivateViewKey(viewKey)
