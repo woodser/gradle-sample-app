@@ -1,4 +1,4 @@
-package app;
+package apps;
 
 import monero.daemon.model.MoneroNetworkType;
 import monero.wallet.MoneroWalletJni;
