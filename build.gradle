@@ -16,14 +16,12 @@ repositories {
 }
 
 dependencies {
-	compile 'io.github.woodser:monero-java-lite:0.2.0'
-	compile 'com.google.code.gson:gson:2.7'
-	compile 'org.apache.httpcomponents:httpclient:4.5.3'
-	testCompile 'junit:junit:4.12'
+	implementation 'io.github.monero-ecosystem:monero-java:0.3.0'
+	testImplementation 'junit:junit:4.12'
 }
 
 group = 'io.github.woodser'
-version = '0.0.1'
+version = '0.0.2'
 description = 'Gradle App Example'
 sourceCompatibility = '1.8'
 

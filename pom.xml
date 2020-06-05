@@ -4,7 +4,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>io.github.woodser</groupId>
 	<artifactId>gradle-sample-app</artifactId>
-	<version>0.0.1</version>
+	<version>0.0.2</version>
 	<name>Monero Sample App</name>
 	<description>Sample Java application which uses monero-java</description>
 	<url>https://github.com/woodser/gradle-sample-app</url>
@@ -18,9 +18,9 @@
 
 	<dependencies>
 		<dependency>
-			<groupId>io.github.woodser</groupId>
-			<artifactId>monero-java-lite</artifactId>
-			<version>0.2.0</version>
+			<groupId>io.github.monero-ecosystem</groupId>
+			<artifactId>monero-java</artifactId>
+			<version>0.3.0</version>
 		</dependency>
 	</dependencies>
 
