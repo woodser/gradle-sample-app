@@ -16,7 +16,7 @@ repositories {
 }
 
 dependencies {
-	implementation 'io.github.monero-ecosystem:monero-java:0.3.1'
+	implementation 'io.github.monero-ecosystem:monero-java:0.3.4'
 	testImplementation 'junit:junit:4.12'
 }
 
