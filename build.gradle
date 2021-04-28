@@ -15,9 +15,18 @@ repositories {
     mavenCentral()
 }
 
+ext {
+    jacksonVersion = '2.12.1'
+}
+
 dependencies {
-	implementation 'io.github.monero-ecosystem:monero-java:0.3.7'
-	testImplementation 'junit:junit:4.12'
+    implementation 'io.github.monero-ecosystem:monero-java:0.5.3'
+    testImplementation 'junit:junit:4.12'
+    compile "com.fasterxml.jackson.core:jackson-core:$jacksonVersion"
+    compile "com.fasterxml.jackson.core:jackson-annotations:$jacksonVersion"
+    compile("com.fasterxml.jackson.core:jackson-databind:$jacksonVersion") {
+        exclude(module: 'jackson-annotations')
+    }
 }
 
 group = 'io.github.woodser'
